@@ -1,0 +1,29 @@
+-- Cara Untuk Menampilkan Data
+SELECT * FROM dika 
+
+--Cara Lain Menampilkan Data
+SELECT * FROM dika AS d 
+
+--Prefiks Samar
+SELECT * FROM dika d
+
+--Cara Mengambil Variabel Nama
+
+--Menggunakan Prefiks
+SELECT i.NIM FROM dika d
+
+--Tidak Menggunakan Prefiks
+SELECT NIM FROM dika d 
+
+--Cara Mengambil Variable NamaDepan dan NamaBelakang
+SELECT d.NamaDepan, NamaBelakang  FROM dika
+
+SELECT * FROM dika d 
+
+--Contoh lain 
+SELECT d.NamaDepan ,o.NIM FROM dika d
+
+--Mengganti Urutan Variabel NomorHP, NamaDepan, NamaBelakang, NIM
+SELECT d.NomorHP, d.NamaDepan, d.NamaBelakang, NIM FROM dika d
+
+
